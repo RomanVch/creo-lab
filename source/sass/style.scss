@@ -19,7 +19,23 @@
 @import "blocks/modal.scss";
 @import "blocks/mob_menu.scss";
 
+
+
 body {
-  font-family: "montserrat", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
 }
 
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 400; /*эту строчку можно пропустить*/
+}
+
+/*Правило только для Firefox*/
+@-moz-document url-prefix() {
+  body {
+    font-weight: lighter !important;
+
+  }}
