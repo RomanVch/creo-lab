@@ -94,7 +94,7 @@
       <h3 class="services__social_network"><span class="services__shelf">/</span>instagram</h3>
       <h3 class="services__social_network "><span class="services__shelf">/</span>stories</h3>
     </div>
-    <div class="services__info-block">
+    <div class="services__info-block visually-hidden">
       <div class="services__info">
         <h2 class="services__head">1Индивидуально cоздаем <br>
           баннеры под вашу ЦА</h2>
@@ -321,19 +321,20 @@
   </div>
 </footer>
 <!-- js -->
-<div>
-  <button><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div class="modal visually-hidden">
+
+  <button class ="modal__close"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path opacity="0.1" d="M26 3.06378L22.9362 0L13 9.93618L3.06378 0L0 3.06378L9.93618 13L0 22.9362L3.06378 26L13 16.0638L22.9361 26L25.9999 22.9362L16.0638 13L26 3.06378Z" fill="#232323"/>
   </svg></button>
-  </svg>
-    <div>
-      <p><span>30%</span>скидка на первый заказ</p>
-    </div>
-    <form>
-      <input type="tel" ></input>
-      <button>заказать обратный звонок</button>
-    </form>
-    <p>нажимая на кнопку вы соглашаетесь на обработку персональных данных</p>
+
+  <div class="modal__paragraph">
+    <p class="modal__p"><span class="modal__paragraph-span">30%</span> <span class="modal__sale">скидка</span><br class="modal-br"> на первый заказ</p>
+  </div>
+  <form>
+    <input class="modal__input" type="tel" placeholder="7 (---) -------"/>
+    <button class="modal__button">заказать обратный звонок</button>
+  </form>
+  <p class="modal__pers">нажимая на кнопку вы соглашаетесь на обработку персональных данных</p>
 </div>
 <script type="module" src="./js/menu.js"></script>
 <script type="module" src="./js/modal.js"></script>
